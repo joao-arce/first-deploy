@@ -1,5 +1,6 @@
 // import { FaCarBattery } from "react-icons/fa";
 // import { GiCarWheel } from "react-icons/gi";
+import carOil from "../assets/car-oil.png";
 
 type cardProps = {
   id: number;
@@ -59,7 +60,7 @@ export const Card = () => {
       key={service.id}
       className="p-8 text-center text-white rounded-lg cursor-pointer hover:border bg-zinc-700 hover:border-amber-400 "
     >
-      <img className="w-16 mx-auto" src={service.urlImg} alt="car oil image" />
+      <img className="w-16 mx-auto" src={carOil} alt="car oil image" />
       {/* <FaCarBattery className="mx-auto text-3xl text-amber-500" /> */}
       {/* <GiCarWheel className="mx-auto text-3xl text-amber-400" /> */}
       <h4 className="my-8 text-lg uppercase text-amber-400">{service.title}</h4>
